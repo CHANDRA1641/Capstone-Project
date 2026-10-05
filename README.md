@@ -117,13 +117,22 @@ sudo apt install -y \
     make \
     git \
     netcat-openbsd
-#commands to run in terminal
+    
+## commands to run in terminal
+
+
 terminal
  sudo apt update && sudo apt install -y build-essential gcc g++ make git netcat-openbsd && cd ~/sentinel && make clean && make && make test && ./build/release/sentineld --source sim --period 100 --listen 127.0.0.1:9090 --verbose
+
+ 
  in Second terminal:
   cd ~/sentinel && ./build/release/sentinel-cli ping && ./build/release/sentinel-cli latest && ./build/release/sentinel-cli stats 50 && ./build/release/sentinel-cli history 5 && ./build/release/sentinel-cli watch 10 && ./build/release/sentinel-cli shm && printf 'PING\nLATEST\nQUIT\n' | nc 127.0.0.1 9090
+
+
 for kernel driver testing :
 sudo apt install -y linux-headers-$(uname -r) && cd ~/sentinel && make driver && sudo insmod driver/sentinel_drv.ko period_ms=100 fifo_depth=256 && ls -l /dev/sentinel0 && dmesg | tail -20 && sudo ./build/release/sentinel_read -n 5 -s
+
+
 to stop:
  Ctrl+C
 sudo rmmod sentinel_drv
