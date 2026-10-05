@@ -48,8 +48,9 @@ File Integrity & Tamper Evidence Audit System
 ├── tests/
 ├── tools/
 ├── Makefile
-└── README.md
-# Sentinel — embedded sensor telemetry platform (C / C++ only)
+└── README.m
+
+## Sentinel — embedded sensor telemetry platform (C / C++ only)
 
 Capstone project for the Wipro LSP + LDD embedded track. It ties the whole syllabus together:
 a **Linux kernel character-device driver (C)** produces sensor samples, a **C++17 daemon** collects,
