@@ -1,3 +1,54 @@
+# File Integrity & Tamper Evidence Audit System
+
+## Project Title
+**File Integrity & Tamper Evidence Audit System**
+
+## Project Overview
+The File Integrity & Tamper Evidence Audit System is a system-level security project designed to monitor files, detect unauthorized modifications, and maintain audit evidence of file integrity events.
+
+The project incorporates concepts from Linux, C++, System Programming, Computer Architecture, Hardware and Software, and Linux Device Drivers.
+
+## Problem Statement
+Unauthorized modification or tampering of important files can compromise system security and data integrity. Traditional file management systems may not provide sufficient visibility into when and how files are changed.
+
+This project aims to provide a mechanism for monitoring file integrity and generating evidence when changes or suspicious activities are detected.
+
+## Proposed Solution
+The system monitors selected files and records their integrity state. When a file is modified, deleted, or otherwise changed, the system can detect the change and record the corresponding event for auditing.
+
+The project uses Linux system-level concepts and C++ programming to implement the monitoring and auditing functionality.
+
+## Objectives
+- Detect unauthorized file modifications.
+- Maintain evidence of file integrity events.
+- Provide an audit mechanism for investigating file changes.
+- Apply Linux system programming concepts.
+- Apply C++ programming concepts.
+- Demonstrate system-level security concepts.
+- Provide a testable and documented implementation.
+
+## Technologies Used
+- C++
+- Linux / Ubuntu
+- Linux System Programming
+- GNU Make
+- Linux Device Driver Concepts
+- Computer Architecture Concepts
+- Hardware and Software Concepts
+
+## Project Structure
+
+```text
+File Integrity & Tamper Evidence Audit System
+│
+├── driver/
+├── include/
+├── packaging/
+├── src/
+├── tests/
+├── tools/
+├── Makefile
+└── README.md
 # Sentinel — embedded sensor telemetry platform (C / C++ only)
 
 Capstone project for the Wipro LSP + LDD embedded track. It ties the whole syllabus together:
